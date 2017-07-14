@@ -9,7 +9,7 @@ resource "aws_instance" "A2" {
   }
 
   provisioner "file" {
-    source      = ""${path.module}/scripts/a1.sh"
+    source      = "${path.module}/scripts/a1.sh"
     destination = "/tmp/a1.sh"
   }
 
